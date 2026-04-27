@@ -1,4 +1,4 @@
-# Sundsvalls Kommun Katla supportmanagement
+# Sundsvalls Kommun Katla Aid
 
 ## APIer som används
 
@@ -24,7 +24,7 @@ Dessa APIer används i projektet, applikationsanvändaren i WSO2 måste prenumer
 1. Klona ner repot.
 
 ```
-git clone git@github.com:Sundsvallskommun/web-app-katla-sm.git
+git clone git@github.com:Sundsvallskommun/web-app-katla-aid.git
 ```
 
 2. Installera dependencies för både `backend` och `frontend`

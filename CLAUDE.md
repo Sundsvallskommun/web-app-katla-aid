@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Katla Support Management - a case/errand management web application for Sundsvalls Kommun. Monorepo with separate `frontend/` and `backend/` directories, each with their own `package.json` and `yarn install`.
+Katla Aid - a case/errand management web application for Sundsvalls Kommun, sister-app to `web-app-katla-sm` (scaffolded from the same codebase). Monorepo with separate `frontend/` and `backend/` directories, each with their own `package.json` and `yarn install`.
 
 ## Build & Development Commands
 
