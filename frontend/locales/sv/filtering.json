@@ -1,0 +1,16 @@
+{
+  "errands": {
+    "open": "öppna ärenden",
+    "draft": "utkast",
+    "closed": "avslutade ärenden"
+  },
+  "search": "Sök",
+  "new_errand": "Rapportera",
+  "new_errand_mobile": "Ny rapport",
+  "show_filter": "Visa filter",
+  "hide_filter": "Dölj filter",
+  "my_errands": "Mina ärenden",
+  "load_more": "Läs in fler",
+  "search_title": "Sök och filtrera",
+  "menu_title": "Meny"
+}

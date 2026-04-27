@@ -1,0 +1,27 @@
+'use client';
+
+import { OverviewSidebar } from '@components/sidebars/overview-sidebar.component';
+import { MobileProvider } from '@contexts/mobile-context';
+import { MOBILE_BREAKPOINT } from 'src/constants/responsive';
+import { useMediaQuery } from 'src/hooks/use-media-query';
+
+interface OverviewLayoutSwitcherProps {
+  children: React.ReactNode;
+}
+
+export const OverviewLayoutSwitcher: React.FC<OverviewLayoutSwitcherProps> = ({ children }) => {
+  const isMobile = useMediaQuery(MOBILE_BREAKPOINT);
+
+  if (isMobile) {
+    return <MobileProvider value={true}>{children}</MobileProvider>;
+  }
+
+  return (
+    <MobileProvider value={false}>
+      <div className="flex">
+        <OverviewSidebar />
+        <div className="flex-grow">{children}</div>
+      </div>
+    </MobileProvider>
+  );
+};
