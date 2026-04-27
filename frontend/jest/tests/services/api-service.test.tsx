@@ -3,14 +3,7 @@ import type { AxiosError } from 'axios';
 
 describe('Api service', () => {
   beforeEach(() => {
-    delete (window as unknown as Record<string, Location>).location;
-    Object.defineProperty(window, 'location', {
-      value: {
-        pathname: '/dashboard',
-        href: '',
-      },
-      writable: true,
-    });
+    window.history.pushState({}, '', '/dashboard');
   });
 
   it('should throw the error', () => {
