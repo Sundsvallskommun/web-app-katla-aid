@@ -1,3 +1,4 @@
+import { afterAll, describe, it } from 'vitest';
 import request from 'supertest';
 import App from '@/app';
 import { IndexController } from '@controllers/index.controller';
