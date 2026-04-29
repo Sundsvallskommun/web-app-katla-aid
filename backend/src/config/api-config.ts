@@ -5,8 +5,8 @@ export const APIS = [
     version: '2.0',
   },
   {
-    name: 'supportmanagement',
-    version: '12.4',
+    name: 'caremanagement',
+    version: '1.0',
   },
   {
     name: 'employee',

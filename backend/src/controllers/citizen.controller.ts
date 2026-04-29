@@ -4,9 +4,9 @@ import { CitizenExtended } from '@/data-contracts/citizen/data-contracts';
 import { HttpException } from '@/exceptions/HttpException';
 import { RequestWithUser } from '@/interfaces/auth.interface';
 import authMiddleware from '@/middlewares/auth.middleware';
-import { StakeholderDTO } from '@/responses/supportmanagement.response';
+import { StakeholderDTO } from '@/responses/stakeholder.response';
 import ApiService from '@/services/api.service';
-import { addHyphenToPersonNumber } from '@/utils/stakeholder-mapping';
+import { addHyphenToPersonNumber } from '@/utils/person-number';
 import { Controller, Get, Param, Req, UseBefore } from 'routing-controllers';
 import { OpenAPI } from 'routing-controllers-openapi';
 
