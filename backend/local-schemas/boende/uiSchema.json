@@ -1,0 +1,38 @@
+{
+  "boendeform": {
+    "ui:widget": "radio"
+  },
+  "manadshyra": {
+    "ui:options": {
+      "inputType": "number"
+    },
+    "ui:placeholder": "0"
+  },
+  "antalRum": {
+    "ui:widget": "select",
+    "ui:placeholder": "Välj…"
+  },
+  "garageIngarIHyran": {
+    "ui:widget": "radio"
+  },
+  "hushallsel": {
+    "ui:options": {
+      "inputType": "number"
+    },
+    "ui:placeholder": "0"
+  },
+  "hemforsakring": {
+    "ui:options": {
+      "inputType": "number"
+    },
+    "ui:placeholder": "0"
+  },
+  "ui:order": [
+    "boendeform",
+    "antalRum",
+    "manadshyra",
+    "garageIngarIHyran",
+    "hushallsel",
+    "hemforsakring"
+  ]
+}

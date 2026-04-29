@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Boende",
+  "description": "Uppgifter om sökandens boende — direkt kopplat till skälighetsbedömning.",
+  "required": ["boendeform", "manadshyra"],
+  "properties": {
+    "boendeform": {
+      "type": "string",
+      "title": "Boendeform",
+      "oneOf": [
+        { "const": "HYRESLAGENHET", "title": "Hyreslägenhet" },
+        { "const": "BOSTADSRATT", "title": "Bostadsrätt" },
+        { "const": "VILLA", "title": "Villa" },
+        { "const": "ANDRAHANDSHYRA", "title": "Andrahandshyra" },
+        { "const": "INNEBOENDE", "title": "Inneboende" },
+        { "const": "ANNAT", "title": "Annat" }
+      ]
+    },
+    "manadshyra": {
+      "type": "number",
+      "title": "Månadshyra (kr)",
+      "minimum": 0
+    },
+    "antalRum": {
+      "type": "string",
+      "title": "Antal rum",
+      "oneOf": [
+        { "const": "1RK", "title": "1 rk" },
+        { "const": "1ROK", "title": "1 rok" },
+        { "const": "2ROK", "title": "2 rok" },
+        { "const": "3ROK", "title": "3 rok" },
+        { "const": "4ROK", "title": "4 rok" },
+        { "const": "5ROK", "title": "5 rok" },
+        { "const": "6ROK_PLUS", "title": "6 rok eller fler" }
+      ]
+    },
+    "garageIngarIHyran": {
+      "type": "boolean",
+      "title": "Ingår garage/p-plats i hyran?",
+      "description": "Om ja, kommer kostnaden räknas bort vid skälighetsbedömningen."
+    },
+    "hushallsel": {
+      "type": "number",
+      "title": "Hushållsel (kr/mån)",
+      "minimum": 0
+    },
+    "hemforsakring": {
+      "type": "number",
+      "title": "Hemförsäkring (kr/mån)",
+      "minimum": 0
+    }
+  }
+}
