@@ -11,7 +11,6 @@ import BaseErrandLayout from '@layouts/base-errand-layout/base-errand-layout.com
 import { ErrandButtonGroup } from '@layouts/errand-button-group.component';
 import Main from '@layouts/main/main.component';
 import { Tabs } from '@sk-web-gui/react';
-import { useAutoInitReporter } from 'src/hooks/use-auto-init-reporter';
 import { useWizardStore } from 'src/stores/wizard-store';
 import { default as NextLink } from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -19,11 +18,6 @@ import { useEffect, useRef } from 'react';
 import { FormProvider, Resolver, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
 import * as yup from 'yup';
-
-const ReporterInit: React.FC = () => {
-  useAutoInitReporter();
-  return null;
-};
 
 const FormSchema = yup.object({}).required();
 
@@ -89,7 +83,6 @@ export const ErrandLayoutContent: React.FC<{ children: React.ReactNode }> = ({ c
         >
           Hoppa till innehåll
         </NextLink>
-        {registerNewErrand && <ReporterInit />}
         <BaseErrandLayout registerNewErrand={registerNewErrand}>
           {isMobile && registerNewErrand ?
             <MobileWizard />

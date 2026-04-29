@@ -1,0 +1,41 @@
+{
+  "fornamn": { "ui:placeholder": "Ex. Anna" },
+  "efternamn": { "ui:placeholder": "Ex. Lindström" },
+  "personnummer": {
+    "ui:placeholder": "ÅÅÅÅMMDD-XXXX",
+    "ui:options": { "inputType": "tel" },
+    "ui:help": "Format: ÅÅÅÅMMDD-XXXX"
+  },
+  "coAdress": { "ui:placeholder": "Ex. c/o Andersson" },
+  "gatuadress": { "ui:placeholder": "Ex. Björkvägen 12" },
+  "postnummer": {
+    "ui:placeholder": "Ex. 852 31",
+    "ui:options": { "inputType": "tel" }
+  },
+  "postort": { "ui:placeholder": "Ex. Sundsvall" },
+  "epost": {
+    "ui:placeholder": "namn@exempel.se",
+    "ui:options": { "inputType": "email" }
+  },
+  "mobiltelefon": {
+    "ui:placeholder": "070-123 45 67",
+    "ui:options": { "inputType": "tel" }
+  },
+  "kontaktViaSms": { "ui:widget": "radio" },
+  "ansoktSenaste3Manaderna": { "ui:widget": "radio" },
+  "behoverTolk": { "ui:widget": "radio" },
+  "ui:order": [
+    "fornamn",
+    "efternamn",
+    "personnummer",
+    "coAdress",
+    "gatuadress",
+    "postnummer",
+    "postort",
+    "epost",
+    "mobiltelefon",
+    "kontaktViaSms",
+    "ansoktSenaste3Manaderna",
+    "behoverTolk"
+  ]
+}

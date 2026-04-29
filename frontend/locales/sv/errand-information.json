@@ -21,18 +21,6 @@
     "register": "Ärendet skickades in",
     "error": "Något gick fel när ärendet sparades"
   },
-  "reporter": {
-    "title": "Rapportör",
-    "description": "Rapportören är den person som initierat ärendet och vår primära kontakt när ärendet handläggs. Om du rapporterar åt en annan kollega, lägger du den personen under annan rapportör."
-  },
-  "other_reporter": {
-    "title": "Annan rapportör",
-    "description": "Ange den kollega som du rapporterar åt."
-  },
-  "other_parties": {
-    "title": "Övriga parter",
-    "description": "En part kan vara en kontaktperson, läkare eller en anhörig vars roll är viktig för ärendet. Om du rapporterar åt en kollega så ska du ange kollegan som övrig part."
-  },
   "economic_aid_information": {
     "title": "Uppgifter kring ekonomiskt bistånd"
   },

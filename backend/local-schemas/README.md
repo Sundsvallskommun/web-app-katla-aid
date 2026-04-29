@@ -55,6 +55,7 @@ När schemat är klart:
 
 | Namn | Beskrivning | Wizard‑steg (plan 02) |
 |---|---|---|
+| `uppgifter-sokande` | Namn, personnummer, adress, kontaktuppgifter, SMS‑samtycke, tolk | Steg 1 |
 | `boende` | Boendeform, hyra, antal rum, hushållsel, hemförsäkring | Steg 3 |
 | `sysselsattning` | Sysselsättning, AF‑registrering, studier, sjukskrivning | Steg 4 |
 | `inkomster` | Lön, swish, underhållsbidrag, banktillgångar, fordon, fastighet | Steg 5 |

@@ -1,0 +1,70 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Uppgifter om sökande",
+  "description": "Dina uppgifter förifylls automatiskt när du loggar in. Komplettera vid behov.",
+  "required": [
+    "fornamn",
+    "efternamn",
+    "personnummer",
+    "epost",
+    "kontaktViaSms",
+    "ansoktSenaste3Manaderna",
+    "behoverTolk"
+  ],
+  "properties": {
+    "fornamn": {
+      "type": "string",
+      "title": "Förnamn"
+    },
+    "efternamn": {
+      "type": "string",
+      "title": "Efternamn"
+    },
+    "personnummer": {
+      "type": "string",
+      "title": "Personnummer",
+      "pattern": "^(\\d{8}-\\d{4}|\\d{12})$",
+      "description": "Format: ÅÅÅÅMMDD-XXXX"
+    },
+    "coAdress": {
+      "type": "string",
+      "title": "C/o-adress"
+    },
+    "gatuadress": {
+      "type": "string",
+      "title": "Gatuadress"
+    },
+    "postnummer": {
+      "type": "string",
+      "title": "Postnummer",
+      "pattern": "^\\d{3}\\s?\\d{2}$"
+    },
+    "postort": {
+      "type": "string",
+      "title": "Postort"
+    },
+    "epost": {
+      "type": "string",
+      "title": "E-postadress",
+      "format": "email"
+    },
+    "mobiltelefon": {
+      "type": "string",
+      "title": "Mobiltelefon",
+      "pattern": "^[0-9 +\\-]*$"
+    },
+    "kontaktViaSms": {
+      "type": "boolean",
+      "title": "Kontakt via SMS"
+    },
+    "ansoktSenaste3Manaderna": {
+      "type": "boolean",
+      "title": "Har du/ni ansökt om ekonomiskt bistånd hos Sundsvalls kommun de senaste 3 månaderna?"
+    },
+    "behoverTolk": {
+      "type": "boolean",
+      "title": "Behöver du tolk?"
+    }
+  }
+}
