@@ -48,7 +48,7 @@ export function usePrepareErrand() {
   };
 
   const getFacilityOrgName = (errandFormData: ErrandFormDataItem[] | undefined): string | undefined => {
-    const platsEntry = errandFormData?.find((e) => e.schemaName === 'avvikelse-plats-handelse');
+    const platsEntry = errandFormData?.find((e) => e.schemaName === 'ekonomiskt-bistand-plats-handelse');
     if (!platsEntry?.data) return undefined;
     const parsed = JSON.parse(platsEntry.data);
     for (const value of Object.values(parsed)) {

@@ -23,7 +23,7 @@ export async function validateStep(
       return errors;
     }
 
-    case 'deviation': {
+    case 'economic-aid': {
       return validateErrandFormData(formValues.errandFormData, t);
     }
 

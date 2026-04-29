@@ -119,7 +119,7 @@ export function FacilitySearchWidget(props: FieldProps) {
 
       <FormControl disabled={disabled || readonly || hasSelection || isLoadingLeafNodes} className="w-full">
         <FormLabel className="font-bold">
-          {t('facility_search.add_label', 'Lägg till plats där avvikelsen inträffat')}
+          {t('facility_search.add_label', 'Lägg till plats där ärendet gäller')}
         </FormLabel>
         <Combobox
           id={id}
@@ -149,7 +149,7 @@ export function FacilitySearchWidget(props: FieldProps) {
       {hasSelection && (
         <div className="border-1 rounded-12 bg-background-content w-full mt-16">
           <div className="rounded-t-12 bg-vattjom-background-200 h-[4rem] flex items-center">
-            <strong className="px-[1rem]">{t('facility_search.card_header', 'Plats där avvikelsen inträffat')}</strong>
+            <strong className="px-[1rem]">{t('facility_search.card_header', 'Plats där ärendet gäller')}</strong>
           </div>
           <div className="p-[1rem]">
             <div className="flex flex-col gap-12">

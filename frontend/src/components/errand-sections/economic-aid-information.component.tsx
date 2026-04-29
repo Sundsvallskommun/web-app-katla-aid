@@ -52,13 +52,13 @@ function SchemaFormField({ schemaName, index, compact }: SchemaFormFieldProps) {
   );
 }
 
-const SCHEMAS = ['avvikelse-plats-handelse'];
+const SCHEMAS = ['ekonomiskt-bistand-plats-handelse'];
 
-interface DeviationInformationProps {
+interface EconomicAidInformationProps {
   compact?: boolean;
 }
 
-export const DeviationInformation: React.FC<DeviationInformationProps> = ({ compact }) => {
+export const EconomicAidInformation: React.FC<EconomicAidInformationProps> = ({ compact }) => {
   return (
     <div className="flex flex-col gap-24">
       {SCHEMAS.map((schemaName, index) => (

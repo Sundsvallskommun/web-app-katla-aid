@@ -39,12 +39,12 @@ export const AboutErrandContent: React.FC = () => {
         <FormLabel>{t('errand-information:about.event_type_label')}</FormLabel>
         <RadioButton.Group data-cy="event-type-group" className="mb-18">
           <RadioButton
-            data-cy="event-type-deviation"
-            checked={eventType === 'AVVIKELSE'}
-            value="AVVIKELSE"
-            onChange={() => setParameter('eventType', 'AVVIKELSE')}
+            data-cy="event-type-economic-aid"
+            checked={eventType === 'EKONOMISKT_BISTAND'}
+            value="EKONOMISKT_BISTAND"
+            onChange={() => setParameter('eventType', 'EKONOMISKT_BISTAND')}
           >
-            {t('errand-information:about.event_type_deviation')}
+            {t('errand-information:about.event_type_economic_aid')}
           </RadioButton>
           <RadioButton
             data-cy="event-type-misconduct"

@@ -24,7 +24,7 @@
   "about": {
     "title": "Om ärendet",
     "event_type_label": "Välj händelsetyp",
-    "event_type_deviation": "Avvikelse",
+    "event_type_economic_aid": "Ekonomiskt bistånd",
     "event_type_misconduct": "Missförhållande",
     "misconduct_alert_title": "Missförhållande",
     "misconduct_alert_description": "Ärendet skickas till en oberoende utredare. Din chef får veta om ärendet men beslutar inte om resultatet.",
@@ -35,7 +35,7 @@
     "event_concerns_describe_note": "(Beskriv mer i avsnittet \"Vad har hänt?\")",
     "event_type_required": "Välj en händelsetyp",
     "event_concerns_required": "Välj vad händelsen berör",
-    "event_concerns_group_facility_required": "Välj en plats där avvikelsen inträffat när händelsen berör grupp/hela verksamheten"
+    "event_concerns_group_facility_required": "Välj en plats där ärendet gäller när händelsen berör grupp/hela verksamheten"
   },
   "reporter": {
     "title": "Rapportör",
@@ -55,8 +55,8 @@
     "title": "Övriga parter",
     "description": "En part kan vara en kontaktperson, läkare eller en anhörig vars roll är viktig för ärendet. Om du rapporterar åt en kollega så ska du ange kollegan som övrig part."
   },
-  "deviation_information": {
-    "title": "Uppgifter kring avvikelsen"
+  "economic_aid_information": {
+    "title": "Uppgifter kring ekonomiskt bistånd"
   },
   "wizard": {
     "step_indicator": "Steg {{current}}/{{total}}",

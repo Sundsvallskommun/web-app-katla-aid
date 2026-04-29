@@ -1,7 +1,7 @@
 'use client';
 
 import { AboutErrand } from '@components/errand-sections/about-errand.component';
-import { DeviationInformation } from '@components/errand-sections/deviation-information.component';
+import { EconomicAidInformation } from '@components/errand-sections/economic-aid-information.component';
 import { OtherParties } from '@components/errand-sections/other-parties.component';
 import { Reporter } from '@components/errand-sections/reporter.component';
 import { User } from '@components/errand-sections/user.component';
@@ -16,7 +16,7 @@ export const RegisterErrand: React.FC = () => {
       <User />
       {appConfig.features.otherPartiesDisclosure && <OtherParties />}
       <h2 className="text-h2-md text-dark-primary">2. Ärendeuppgifter</h2>
-      <DeviationInformation />
+      <EconomicAidInformation />
     </div>
   );
 };
