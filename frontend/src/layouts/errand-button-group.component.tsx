@@ -30,7 +30,7 @@ export const ErrandButtonGroup: React.FC<ErrandButtonGroupProps> = ({ isNewErran
   const { setShowValidation } = useFormValidation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isCancelOpen, setIsCancelOpen] = useState<boolean>(false);
-  const { prepareErrandForApi, getFacilityOrgName } = usePrepareErrand();
+  const { prepareErrandForApi } = usePrepareErrand();
 
   const errandStatus = watch('status');
   const errandId = watch('id');
@@ -98,39 +98,9 @@ export const ErrandButtonGroup: React.FC<ErrandButtonGroupProps> = ({ isNewErran
         variant="primary"
         color="vattjom"
         onClick={async () => {
-          // Aktivera validering för JSON-formulär
           setShowValidation(true);
 
-          // Validera att eventType och eventConcerns är valda
           const values = getValues();
-          const eventType = values.parameters?.find((p) => p.key === 'eventType')?.values?.[0];
-          const eventConcerns = values.parameters?.find((p) => p.key === 'eventConcerns')?.values?.[0];
-          if (!eventType) {
-            toastMessage({
-              position: 'bottom',
-              status: 'error',
-              message: t('errand-information:about.event_type_required'),
-            });
-            return;
-          }
-          if (!eventConcerns) {
-            toastMessage({
-              position: 'bottom',
-              status: 'error',
-              message: t('errand-information:about.event_concerns_required'),
-            });
-            return;
-          }
-          if (eventConcerns === 'GRUPP_VERKSAMHET' && !getFacilityOrgName(values.errandFormData)) {
-            toastMessage({
-              position: 'bottom',
-              status: 'error',
-              message: t('errand-information:about.event_concerns_group_facility_required'),
-            });
-            return;
-          }
-
-          // Validera errandFormData
           const formDataErrors = await validateErrandFormData(values.errandFormData, tForms);
 
           if (formDataErrors.length > 0) {

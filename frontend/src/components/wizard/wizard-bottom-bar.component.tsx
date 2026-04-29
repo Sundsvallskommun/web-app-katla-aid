@@ -29,7 +29,7 @@ export const WizardBottomBar: React.FC = () => {
   const { currentStep, goNext, goBack, setStepErrors } = useWizardStore();
   const [isOpen, setIsOpen] = useState(false);
   const [isCancelOpen, setIsCancelOpen] = useState(false);
-  const { prepareErrandForApi, getFacilityOrgName } = usePrepareErrand();
+  const { prepareErrandForApi } = usePrepareErrand();
 
   const steps = useActiveWizardSteps();
   const errandId = watch('id');
@@ -90,33 +90,6 @@ export const WizardBottomBar: React.FC = () => {
     setShowValidation(true);
 
     const values = getValues();
-    const eventType = values.parameters?.find((p) => p.key === 'eventType')?.values?.[0];
-    const eventConcerns = values.parameters?.find((p) => p.key === 'eventConcerns')?.values?.[0];
-
-    if (!eventType) {
-      toastMessage({
-        position: 'bottom',
-        status: 'error',
-        message: t('errand-information:about.event_type_required'),
-      });
-      return;
-    }
-    if (!eventConcerns) {
-      toastMessage({
-        position: 'bottom',
-        status: 'error',
-        message: t('errand-information:about.event_concerns_required'),
-      });
-      return;
-    }
-    if (eventConcerns === 'GRUPP_VERKSAMHET' && !getFacilityOrgName(values.errandFormData)) {
-      toastMessage({
-        position: 'bottom',
-        status: 'error',
-        message: t('errand-information:about.event_concerns_group_facility_required'),
-      });
-      return;
-    }
 
     const formDataErrors = await validateErrandFormData(values.errandFormData, tForms);
     if (formDataErrors.length > 0) {

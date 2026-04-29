@@ -1,6 +1,4 @@
 import { ReporterContent } from '@components/errand-sections/reporter.component';
-import { UserContent } from '@components/errand-sections/user.component';
-import { AboutErrandContent } from '@components/errand-sections/about-errand.component';
 import { OtherPartiesContent } from '@components/errand-sections/other-parties.component';
 import { EconomicAidInformation } from '@components/errand-sections/economic-aid-information.component';
 import { WizardSummary } from './wizard-summary.component';
@@ -17,8 +15,6 @@ export const WizardStepContent: React.FC = () => {
 
   const renderStepContent = () => {
     switch (step?.id) {
-      case 'about':
-        return <AboutErrandContent />;
       case 'reporter':
         return (
           <>
@@ -31,8 +27,6 @@ export const WizardStepContent: React.FC = () => {
             )}
           </>
         );
-      case 'user':
-        return <UserContent />;
       case 'economic-aid':
         return <EconomicAidInformation compact />;
       case 'summary':

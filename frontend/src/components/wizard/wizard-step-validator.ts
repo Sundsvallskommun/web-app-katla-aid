@@ -9,26 +9,11 @@ export async function validateStep(
   t?: TFunction
 ): Promise<string[]> {
   switch (step.id) {
-    case 'about': {
-      const errors: string[] = [];
-      const eventType = formValues.parameters?.find((p) => p.key === 'eventType')?.values?.[0];
-      const eventConcerns = formValues.parameters?.find((p) => p.key === 'eventConcerns')?.values?.[0];
-
-      if (!eventType) {
-        errors.push(t ? t('errand-information:about.event_type_required') : 'Välj en händelsetyp');
-      }
-      if (!eventConcerns) {
-        errors.push(t ? t('errand-information:about.event_concerns_required') : 'Välj vad händelsen berör');
-      }
-      return errors;
-    }
-
     case 'economic-aid': {
       return validateErrandFormData(formValues.errandFormData, t);
     }
 
     case 'reporter':
-    case 'user':
     case 'summary':
     default:
       return [];
