@@ -22,12 +22,12 @@ export const OverviewSidebar: React.FC = () => {
     <NextLink
       href="/"
       className="no-underline"
-      aria-label={`Katla - ${process.env.NEXT_PUBLIC_APP_NAME}. Gå till startsidan.`}
+      aria-label={`Ekonomiskt bistånd - ${process.env.NEXT_PUBLIC_APP_NAME}. Gå till startsidan.`}
     >
       <Logo
         className={cx(open ? '' : 'w-[2.8rem]')}
         variant={open ? 'service' : 'symbol'}
-        title={'Katla'}
+        title={'Ekonomiskt bistånd'}
         subtitle={process.env.NEXT_PUBLIC_APP_NAME}
       />
     </NextLink>

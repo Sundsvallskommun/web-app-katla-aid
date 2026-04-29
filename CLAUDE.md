@@ -16,9 +16,8 @@ yarn lint                   # ESLint (no cache)
 yarn type-check             # TypeScript check without emit
 yarn jest --watch           # Unit tests in watch mode
 yarn jest:coverage          # Unit tests with coverage
-yarn cypress                # Cypress interactive (e2e + component)
-yarn cypress:headless       # Cypress headless CI mode
-yarn test:coverage          # Full test suite with merged coverage
+yarn test:e2e               # Playwright e2e tests
+yarn test:e2e:ui            # Playwright e2e in UI mode
 yarn generate:contracts     # Regenerate API data contracts from swagger
 ```
 
@@ -26,7 +25,7 @@ yarn generate:contracts     # Regenerate API data contracts from swagger
 ```bash
 yarn dev                    # Dev server (nodemon)
 yarn build                  # Compile TypeScript (tsc + tsc-alias)
-yarn test                   # Jest tests
+yarn test                   # Vitest tests
 yarn lint                   # ESLint
 yarn generate:contracts     # Regenerate API data contracts from swagger
 yarn type-check             # TypeScript check without emit
@@ -67,15 +66,15 @@ Both frontend and backend have `src/data-contracts/` directories with TypeScript
 - **Prettier**: single quotes, 2-space indent, 120 print width, trailing commas (es5), `experimentalTernaries: true`
 - **ESLint**: `@typescript-eslint/no-explicit-any` is an error; `react-refresh/only-export-components` enforced
 - **Component naming**: `*.component.tsx` pattern
-- **Cypress selectors**: use `data-cy` attributes
+- **Test selectors**: use `data-cy` attributes (legacy name from Cypress era; still used by Playwright)
 - **Feature flags**: configured in `src/config/appconfig.tsx` via `NEXT_PUBLIC_*` env vars
 - **Language**: UI text and comments are in Swedish; code identifiers in English
 
 ## Testing
 
-- **Jest**: unit/integration tests, config in `jest.config.js`, setup in `jest/setup.js`
-- **Cypress**: e2e tests in `cypress/e2e/`, component tests in `cypress/component/`
-- **Coverage**: merged from both Jest and Cypress via `istanbul-merge`
+- **Jest** (frontend unit/integration): config in `jest.config.js`, setup in `jest/setup.js`
+- **Playwright** (frontend e2e): config in `playwright.config.ts`, tests in `tests/e2e/`
+- **Vitest** (backend): config in `vitest.config.ts`
 
 ## Environment
 

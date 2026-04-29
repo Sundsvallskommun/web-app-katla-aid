@@ -17,7 +17,7 @@ export const MainPageMobileHeader: React.FC<MainPageMobileHeaderProps> = ({ icon
   const headerIcon = icon ?? (
     <NextLink
       href="/oversikt"
-      title={`Katla - ${process.env.NEXT_PUBLIC_APP_NAME}. Gå till startsidan.`}
+      title={`Ekonomiskt bistånd - ${process.env.NEXT_PUBLIC_APP_NAME}. Gå till startsidan.`}
     >
       <Logo variant="symbol" className="h-32" />
     </NextLink>
