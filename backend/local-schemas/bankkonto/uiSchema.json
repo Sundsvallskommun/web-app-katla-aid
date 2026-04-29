@@ -1,0 +1,24 @@
+{
+  "clearingnummer": {
+    "ui:placeholder": "Ex. 8327",
+    "ui:options": { "inputType": "tel" }
+  },
+  "kontonummer": {
+    "ui:placeholder": "Ex. 12345678",
+    "ui:options": { "inputType": "tel" }
+  },
+  "kontoinnehavareArSokande": { "ui:widget": "radio" },
+  "kontoinnehavareNamn": {
+    "ui:placeholder": "Förnamn Efternamn"
+  },
+  "kontoinnehavarePersonnummer": {
+    "ui:placeholder": "ÅÅÅÅMMDD-XXXX"
+  },
+  "ui:order": [
+    "clearingnummer",
+    "kontonummer",
+    "kontoinnehavareArSokande",
+    "kontoinnehavareNamn",
+    "kontoinnehavarePersonnummer"
+  ]
+}

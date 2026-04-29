@@ -1,0 +1,24 @@
+{
+  "sysselsattning": {
+    "ui:widget": "radio"
+  },
+  "registreradHosAf": {
+    "ui:widget": "radio"
+  },
+  "studerar": {
+    "ui:widget": "radio"
+  },
+  "larosateSkolform": {
+    "ui:placeholder": "T.ex. Mittuniversitetet"
+  },
+  "sjukskriven": {
+    "ui:widget": "radio"
+  },
+  "ui:order": [
+    "sysselsattning",
+    "registreradHosAf",
+    "studerar",
+    "larosateSkolform",
+    "sjukskriven"
+  ]
+}

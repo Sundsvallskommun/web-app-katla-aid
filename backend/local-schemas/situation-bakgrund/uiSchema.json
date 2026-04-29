@@ -1,0 +1,14 @@
+{
+  "beskrivning": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 5 },
+    "ui:help": "Max 500 tecken."
+  },
+  "situationenForandrats": { "ui:widget": "radio" },
+  "situationenForandratsBeskrivning": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 3 }
+  },
+  "valdEllerHotIHemmet": { "ui:widget": "radio" },
+  "villKontaktasInnanBeslut": { "ui:widget": "radio" }
+}

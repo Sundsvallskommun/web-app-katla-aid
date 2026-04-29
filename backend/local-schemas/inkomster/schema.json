@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Inkomster och tillgångar",
+  "description": "Vi hämtar automatiskt uppgifter från FK, Skatteverket, CSN, Pensionsmyndigheten och Arbetsförmedlingen via SSBTEK när du skickar in. Ange nedan inkomster som inte syns i myndighetsdatan.",
+  "properties": {
+    "lon": {
+      "type": "number",
+      "title": "Lön (kr/mån)",
+      "description": "Bifoga lönespecifikation som bilaga om möjligt.",
+      "minimum": 0
+    },
+    "swishKontant": {
+      "type": "number",
+      "title": "Swish / kontantinkomster (kr/mån)",
+      "description": "Du har deklarationsplikt för all inkomst.",
+      "minimum": 0
+    },
+    "underhallsbidrag": {
+      "type": "number",
+      "title": "Underhållsbidrag mottaget (kr/mån)",
+      "minimum": 0
+    },
+    "ovrigaInkomster": {
+      "type": "number",
+      "title": "Övriga inkomster (kr/mån)",
+      "description": "T.ex. hyresintäkt, stipendium.",
+      "minimum": 0
+    },
+    "ovrigaInkomsterBeskrivning": {
+      "type": "string",
+      "title": "Beskriv övriga inkomster"
+    },
+    "banktillgangar": {
+      "type": "number",
+      "title": "Banktillgångar — alla konton (kr)",
+      "description": "Bifoga kontoutdrag för senaste 3 månaderna som bilaga.",
+      "minimum": 0
+    },
+    "agerFordon": {
+      "type": "boolean",
+      "title": "Äger du fordon?",
+      "description": "Vi hämtar uppgift från Transportstyrelsen via SSBTEK, men bekräfta gärna här."
+    },
+    "agerFastighet": {
+      "type": "boolean",
+      "title": "Äger du fastighet?",
+      "description": "Vi hämtar uppgift från Skatteverket via SSBTEK."
+    },
+    "ovrigaTillgangar": {
+      "type": "string",
+      "title": "Övriga tillgångar",
+      "description": "T.ex. aktier, fonder, bostadsrätt."
+    }
+  }
+}

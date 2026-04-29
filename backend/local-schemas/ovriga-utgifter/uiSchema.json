@@ -1,0 +1,25 @@
+{
+  "fackforeningsavgift": { "ui:placeholder": "0" },
+  "akassa": { "ui:placeholder": "0" },
+  "arbetsresor": { "ui:placeholder": "0" },
+  "arbetsresorAvstandKm": { "ui:placeholder": "0" },
+  "arbetsresorFardsatt": { "ui:widget": "select", "ui:placeholder": "Välj…" },
+  "lakarvardMedicin": { "ui:placeholder": "0" },
+  "tandvard": { "ui:placeholder": "0" },
+  "barnomsorg": { "ui:placeholder": "0" },
+  "umgangesresor": { "ui:placeholder": "0" },
+  "skulder": { "ui:placeholder": "0" },
+  "skulderForfallodatum": {},
+  "glasogon": { "ui:placeholder": "0" },
+  "hemutrustning": { "ui:placeholder": "0" },
+  "hemutrustningSpec": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 2 }
+  },
+  "internet": { "ui:placeholder": "0" },
+  "ovrigt": { "ui:placeholder": "0" },
+  "ovrigtBeskrivning": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 2 }
+  }
+}

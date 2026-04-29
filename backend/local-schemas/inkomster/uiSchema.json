@@ -1,0 +1,28 @@
+{
+  "lon": { "ui:placeholder": "0", "ui:options": { "inputType": "number" } },
+  "swishKontant": { "ui:placeholder": "0", "ui:options": { "inputType": "number" } },
+  "underhallsbidrag": { "ui:placeholder": "0", "ui:options": { "inputType": "number" } },
+  "ovrigaInkomster": { "ui:placeholder": "0", "ui:options": { "inputType": "number" } },
+  "ovrigaInkomsterBeskrivning": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 2 }
+  },
+  "banktillgangar": { "ui:placeholder": "0", "ui:options": { "inputType": "number" } },
+  "agerFordon": { "ui:widget": "radio" },
+  "agerFastighet": { "ui:widget": "radio" },
+  "ovrigaTillgangar": {
+    "ui:widget": "textarea",
+    "ui:options": { "rows": 2 }
+  },
+  "ui:order": [
+    "lon",
+    "swishKontant",
+    "underhallsbidrag",
+    "ovrigaInkomster",
+    "ovrigaInkomsterBeskrivning",
+    "banktillgangar",
+    "agerFordon",
+    "agerFastighet",
+    "ovrigaTillgangar"
+  ]
+}

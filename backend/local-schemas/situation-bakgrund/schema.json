@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Situation och bakgrund",
+  "description": "Kontextuell information som hjälper handläggaren förstå din situation.",
+  "required": ["beskrivning"],
+  "properties": {
+    "beskrivning": {
+      "type": "string",
+      "title": "Beskriv kortfattat varför du söker bistånd just nu",
+      "maxLength": 500
+    },
+    "situationenForandrats": {
+      "type": "boolean",
+      "title": "Har situationen förändrats sedan senaste ansökan?",
+      "description": "Visas främst vid återansökan."
+    },
+    "situationenForandratsBeskrivning": {
+      "type": "string",
+      "title": "Beskriv förändringen",
+      "maxLength": 500
+    },
+    "valdEllerHotIHemmet": {
+      "type": "boolean",
+      "title": "Förekommer det våld eller hot i hemmet?",
+      "description": "Vi kan i så fall hantera ärendet med särskild sekretess. Du kan välja att ringa istället för att svara här."
+    },
+    "villKontaktasInnanBeslut": {
+      "type": "boolean",
+      "title": "Vill du bli kontaktad av handläggare innan beslut fattas?"
+    }
+  }
+}

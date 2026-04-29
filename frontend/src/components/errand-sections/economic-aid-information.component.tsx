@@ -52,7 +52,14 @@ function SchemaFormField({ schemaName, index, compact }: SchemaFormFieldProps) {
   );
 }
 
-const SCHEMAS = ['boende'];
+const SCHEMAS = [
+  'boende',
+  'sysselsattning',
+  'inkomster',
+  'ovriga-utgifter',
+  'situation-bakgrund',
+  'bankkonto',
+];
 
 interface EconomicAidInformationProps {
   compact?: boolean;

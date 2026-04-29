@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Övriga utgifter",
+  "description": "Utöver riksnorm, prövas individuellt. Lämna fält tomma om de inte gäller dig.",
+  "properties": {
+    "fackforeningsavgift": {
+      "type": "number",
+      "title": "Fackföreningsavgift (kr/mån)",
+      "minimum": 0
+    },
+    "akassa": {
+      "type": "number",
+      "title": "A-kassa (kr/mån)",
+      "minimum": 0
+    },
+    "arbetsresor": {
+      "type": "number",
+      "title": "Arbetsresor (kr/mån)",
+      "minimum": 0
+    },
+    "arbetsresorAvstandKm": {
+      "type": "number",
+      "title": "Arbetsresor — avstånd (km enkel resa)",
+      "minimum": 0
+    },
+    "arbetsresorFardsatt": {
+      "type": "string",
+      "title": "Arbetsresor — färdsätt",
+      "oneOf": [
+        { "const": "BIL", "title": "Bil" },
+        { "const": "KOLLEKTIVT", "title": "Kollektivtrafik" },
+        { "const": "CYKEL", "title": "Cykel" },
+        { "const": "ANNAT", "title": "Annat" }
+      ]
+    },
+    "lakarvardMedicin": {
+      "type": "number",
+      "title": "Läkarvård / medicin (kr/mån)",
+      "minimum": 0
+    },
+    "tandvard": {
+      "type": "number",
+      "title": "Tandvård (kr — kostnadsförslag)",
+      "description": "Bifoga kostnadsförslag från tandläkare.",
+      "minimum": 0
+    },
+    "barnomsorg": {
+      "type": "number",
+      "title": "Barnomsorg (kr/mån)",
+      "minimum": 0
+    },
+    "umgangesresor": {
+      "type": "number",
+      "title": "Umgängesresor (kr/mån)",
+      "description": "Bifoga intyg från umgängesförälder eller motsvarande.",
+      "minimum": 0
+    },
+    "skulder": {
+      "type": "number",
+      "title": "Skulder — t.ex. hyra, el (kr)",
+      "minimum": 0
+    },
+    "skulderForfallodatum": {
+      "type": "string",
+      "title": "Skulder — förfallodatum",
+      "format": "date"
+    },
+    "glasogon": {
+      "type": "number",
+      "title": "Glasögon (kr)",
+      "description": "Bifoga recept.",
+      "minimum": 0
+    },
+    "hemutrustning": {
+      "type": "number",
+      "title": "Hemutrustning (kr)",
+      "minimum": 0
+    },
+    "hemutrustningSpec": {
+      "type": "string",
+      "title": "Hemutrustning — specificering"
+    },
+    "internet": {
+      "type": "number",
+      "title": "Internetuppkoppling (kr/mån)",
+      "description": "Max 250 kr/mån enligt riktlinjer.",
+      "minimum": 0,
+      "maximum": 250
+    },
+    "ovrigt": {
+      "type": "number",
+      "title": "Övrigt (kr)",
+      "minimum": 0
+    },
+    "ovrigtBeskrivning": {
+      "type": "string",
+      "title": "Övrigt — beskrivning"
+    }
+  }
+}

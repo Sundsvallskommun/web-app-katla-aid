@@ -56,3 +56,8 @@ När schemat är klart:
 | Namn | Beskrivning | Wizard‑steg (plan 02) |
 |---|---|---|
 | `boende` | Boendeform, hyra, antal rum, hushållsel, hemförsäkring | Steg 3 |
+| `sysselsattning` | Sysselsättning, AF‑registrering, studier, sjukskrivning | Steg 4 |
+| `inkomster` | Lön, swish, underhållsbidrag, banktillgångar, fordon, fastighet | Steg 5 |
+| `ovriga-utgifter` | Fackavgift, A‑kassa, arbetsresor, läkarvård, tandvård, glasögon m.m. | Steg 6 |
+| `situation-bakgrund` | Beskrivning, förändringar, våld i hemmet, kontaktönskan | Steg 7 |
+| `bankkonto` | Clearing/kontonummer, kontoinnehavare | Steg 8 |

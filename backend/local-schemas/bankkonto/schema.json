@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Bankkonto för utbetalning",
+  "required": ["clearingnummer", "kontonummer", "kontoinnehavareArSokande"],
+  "properties": {
+    "clearingnummer": {
+      "type": "string",
+      "title": "Clearingnummer",
+      "pattern": "^\\d{4,5}$",
+      "description": "4 eller 5 siffror."
+    },
+    "kontonummer": {
+      "type": "string",
+      "title": "Kontonummer",
+      "pattern": "^\\d+$",
+      "description": "Endast siffror, valideras mot Bankgirot vid inskick."
+    },
+    "kontoinnehavareArSokande": {
+      "type": "boolean",
+      "title": "Är kontoinnehavaren samma person som sökanden?"
+    },
+    "kontoinnehavareNamn": {
+      "type": "string",
+      "title": "Kontoinnehavarens namn",
+      "description": "Fyll i om kontot inte tillhör dig."
+    },
+    "kontoinnehavarePersonnummer": {
+      "type": "string",
+      "title": "Kontoinnehavarens personnummer",
+      "pattern": "^(\\d{8}-\\d{4}|\\d{12})$"
+    }
+  }
+}
